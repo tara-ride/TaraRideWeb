@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
+import {app} from 'server-config/firebaseConfig.js';
 
 const DriverForm = () => {
   const [name, setName] = useState('');
@@ -22,6 +23,11 @@ const DriverForm = () => {
     console.log({ name, email, licenseNumber, vehicleModel, licenseImage });
   };
 
+// account_information (business_role, created_by, created_on, email_address, uuid);
+
+// personal_information (birth_date, first_name, last_name, middle_name, sex_at_birth);
+
+// contact_information (contact_no, home_address);
 
   return (
     <div className="max-w-lg mx-auto p-8 bg-white shadow-lg rounded-lg mt-10">
