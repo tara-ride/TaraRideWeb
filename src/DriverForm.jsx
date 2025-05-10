@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 
 const DriverForm = () => {
@@ -7,12 +8,12 @@ const DriverForm = () => {
   const [licenseNumber, setLicenseNumber] = useState('');
   const [vehicleModel, setVehicleModel] = useState('');
   const [licenseImage, setLicenseImage] = useState(null);
-  const [vehicleImage, setVehicleImage] = useState(null);  
+  const [vehicleImage, setVehicleImage] = useState(null);
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     if (file) {
-      setLicenseImage(URL.createObjectURL(file)); 
+      setLicenseImage(URL.createObjectURL(file));
     }
   };
 
@@ -27,7 +28,7 @@ const DriverForm = () => {
       <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">Become a Driver</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
 
-        {}
+        { }
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-600">Full Name</label>
           <input
@@ -41,7 +42,7 @@ const DriverForm = () => {
           />
         </div>
 
-        {}
+        { }
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-gray-600">Email Address</label>
           <input
@@ -54,8 +55,8 @@ const DriverForm = () => {
             required
           />
         </div>
-        
-        {}
+
+        { }
         <div>
           <label htmlFor="mobileNumber" className='block text-sm font-medium text-gray-600'>Mobile Number</label>
           <input
@@ -66,10 +67,10 @@ const DriverForm = () => {
             placeholder="Enter your mobile number"
             className="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
-            />
+          />
         </div>
 
-        {}
+        { }
         <div>
           <label htmlFor="vehicleModel" className="block text-sm font-medium text-gray-600">Vehicle Model</label>
           <input
@@ -83,7 +84,7 @@ const DriverForm = () => {
           />
         </div>
 
-        {}
+        { }
         <div>
           <label htmlFor="vehicleImage" className="block text-sm font-medium text-gray-600">Upload Vehicle Model Image</label>
           <input
@@ -101,7 +102,7 @@ const DriverForm = () => {
           )}
         </div>
 
-        {}
+        { }
         <div>
           <label htmlFor="licenseNumber" className="block text-sm font-medium text-gray-600">Driver's License Number</label>
           <input
@@ -115,7 +116,7 @@ const DriverForm = () => {
           />
         </div>
 
-        {}
+        { }
         <div>
           <label htmlFor="licenseImage" className="block text-sm font-medium text-gray-600">Upload Driver's License Image</label>
           <input
@@ -133,7 +134,7 @@ const DriverForm = () => {
           )}
         </div>
 
-        {}
+        { }
         <div>
           <button
             type="submit"
@@ -145,7 +146,7 @@ const DriverForm = () => {
       </form>
     </div>
 
-    
+
   );
 };
 
