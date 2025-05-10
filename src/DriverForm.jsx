@@ -28,6 +28,7 @@ const DriverForm = () => {
 // personal_information (birth_date, first_name, last_name, middle_name, sex_at_birth);
 
 // contact_information (contact_no, home_address);
+// dev
 
   return (
     <div className="max-w-lg mx-auto p-8 bg-white shadow-lg rounded-lg mt-10">
